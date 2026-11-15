@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "servicer"
+version = "0.1.0"
+description = "Simplify service management on systemd"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = [
+    "typer[all]>=0.12",
+    "rich>=13",
+    "dasbus>=1.6",
+    "humanize>=4",
+]
+
+[project.scripts]
+ser = "ser.cli:app"
+
+[tool.setuptools.packages.find]
+include = ["ser*"]
