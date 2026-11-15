@@ -11,6 +11,7 @@ from pathlib import Path
 import typer
 
 from ser.utils.find_binary_path import find_binary_path
+from ser.utils.service_actions import daemon_reload
 from ser.utils.service_names import get_full_name, get_service_file_path
 
 
@@ -141,6 +142,7 @@ def handle_create_service(
     )
 
     service_file_path.write_text(content)
+    daemon_reload()
     typer.echo(
         f"Service '{service_name}' created at {service_file_path}. "
         f"To start run `ser start {service_name}`"
