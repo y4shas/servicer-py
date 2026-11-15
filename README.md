@@ -9,7 +9,7 @@ Install with [pipx](https://pipx.pypa.io/), which keeps the application in an is
 ```sh
 sudo pipx install --global .
 # Or install directly from GitHub
-sudo pipx install --global git+https://github.com/y4shas/servicer-py.git
+sudo pipx install --global --system-site-packages git+https://github.com/y4shas/servicer-py.git
 ```
 
 The global install puts `ser` on the system path, so it is available to commands run with `sudo`.
