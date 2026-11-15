@@ -1,5 +1,5 @@
 """
-Reload a service — mirrors handle_reload_service.rs
+Reload a service - mirrors handle_reload_service.rs
 """
 from __future__ import annotations
 

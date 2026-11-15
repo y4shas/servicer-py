@@ -1,5 +1,5 @@
 """
-Open a text editor to create or edit a .service file — mirrors handle_edit_service_file.rs
+Open a text editor to create or edit a .service file - mirrors handle_edit_service_file.rs
 """
 from __future__ import annotations
 

@@ -1,6 +1,6 @@
 # servicer-py
 
-A Python port of [servicer](https://github.com/servicer-labs/servicer/tree/master) — a dead-simple CLI for managing systemd services without touching `.service` files by hand.
+A Python port of [servicer](https://github.com/servicer-labs/servicer/tree/master) - a dead-simple CLI for managing systemd services without touching `.service` files by hand.
 
 ## Install
 
@@ -53,7 +53,7 @@ sudo ser delete my-app
 sudo ser rm my-app        # alias
 ```
 
-Services are stored as `/etc/systemd/system/<name>.ser.service`. You can write your own `.service` files and manage them with `ser` — just name them `*.ser.service`.
+Services are stored as `/etc/systemd/system/<name>.ser.service`. You can write your own `.service` files and manage them with `ser` - just name them `*.ser.service`.
 
 ## Requirements
 
@@ -73,6 +73,6 @@ Services are stored as `/etc/systemd/system/<name>.ser.service`. You can write y
 | D-Bus | zbus | dasbus |
 | Tables | cli_table | rich (colors, better formatting) |
 | Byte sizes | bytesize crate | humanize |
-| `ser logs` | Pipes stdout line-by-line through its own reader | `subprocess.run` inherits stdout directly — no buffering issues with `--follow` |
+| `ser logs` | Pipes stdout line-by-line through its own reader | `subprocess.run` inherits stdout directly - no buffering issues with `--follow` |
 | Errors | `panic!()` | Friendly message + clean exit |
 | Unknown extension | panic | Error message suggesting `--interpreter` |

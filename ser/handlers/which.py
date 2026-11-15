@@ -1,5 +1,5 @@
 """
-Print file paths for a service — mirrors handle_print_paths.rs
+Print file paths for a service - mirrors handle_print_paths.rs
 """
 from __future__ import annotations
 

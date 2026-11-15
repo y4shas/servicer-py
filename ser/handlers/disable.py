@@ -1,5 +1,5 @@
 """
-Disable a service from starting on boot — mirrors handle_disable_service.rs
+Disable a service from starting on boot - mirrors handle_disable_service.rs
 """
 from __future__ import annotations
 

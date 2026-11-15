@@ -1,5 +1,5 @@
 ﻿"""
-servicer CLI â€” mirrors main.rs (clap â†’ typer)
+servicer CLI - mirrors main.rs (clap -> typer)
 
 Entry point: `ser` (defined in pyproject.toml [project.scripts])
 """
@@ -12,7 +12,7 @@ import typer
 
 app = typer.Typer(
     name="ser",
-    help="servicer â€” Simplify service management on systemd.",
+    help="servicer - Simplify service management on systemd.",
     no_args_is_help=True,
     add_completion=False,
 )

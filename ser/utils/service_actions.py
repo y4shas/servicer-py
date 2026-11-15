@@ -1,5 +1,5 @@
 """
-High-level service control actions — mirrors service_actions.rs
+High-level service control actions - mirrors service_actions.rs
 """
 from ser.utils.systemd import (
     manager_disable_unit_files,

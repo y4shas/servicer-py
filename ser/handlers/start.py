@@ -1,5 +1,5 @@
 """
-Start a service — mirrors handle_start_service.rs
+Start a service - mirrors handle_start_service.rs
 """
 from __future__ import annotations
 

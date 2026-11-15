@@ -1,5 +1,5 @@
 """
-Create a new systemd service — mirrors handle_create_service.rs
+Create a new systemd service - mirrors handle_create_service.rs
 """
 from __future__ import annotations
 
@@ -118,7 +118,7 @@ def handle_create_service(
     sudo_user = os.environ.get("SUDO_USER")
     if interpreter:
         if not sudo_user:
-            typer.echo("Warning: not in sudo mode — using interpreter name as-is.", err=True)
+            typer.echo("Warning: not in sudo mode - using interpreter name as-is.", err=True)
             interp_path = interpreter
         else:
             interp_path = find_binary_path(interpreter, sudo_user)

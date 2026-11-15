@@ -1,5 +1,5 @@
 """
-Enable a service on boot — mirrors handle_enable_service.rs
+Enable a service on boot - mirrors handle_enable_service.rs
 """
 from __future__ import annotations
 

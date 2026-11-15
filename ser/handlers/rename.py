@@ -1,5 +1,5 @@
 """
-Rename a service — mirrors handle_rename_service.rs
+Rename a service - mirrors handle_rename_service.rs
 
 If the service is running, stops it, renames the .service file, then restarts.
 Always daemon-reloads after the rename.
@@ -38,7 +38,7 @@ def handle_rename_service(name: str, new_name: str) -> None:
     shutil.copy2(str(old_path), str(new_path))
     old_path.unlink()
     daemon_reload()
-    typer.echo(f"Renamed '{name}' → '{new_name}'.")
+    typer.echo(f"Renamed '{name}' -> '{new_name}'.")
 
     if was_active:
         start_service(new_full)

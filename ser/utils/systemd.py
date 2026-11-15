@@ -1,5 +1,5 @@
 ﻿"""
-D-Bus wrappers for org.freedesktop.systemd1 â€” mirrors systemd.rs
+D-Bus wrappers for org.freedesktop.systemd1 - mirrors systemd.rs
 
 Uses dasbus for clean, Pythonic D-Bus access.
 """

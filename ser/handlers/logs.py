@@ -1,5 +1,5 @@
 """
-Stream journald logs for a service — mirrors handle_show_logs.rs
+Stream journald logs for a service - mirrors handle_show_logs.rs
 """
 from __future__ import annotations
 

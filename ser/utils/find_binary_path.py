@@ -1,5 +1,5 @@
 """
-Find the absolute path of a binary as a non-root user — mirrors find_binary_path.rs
+Find the absolute path of a binary as a non-root user - mirrors find_binary_path.rs
 
 `ser create` must run in sudo mode. $PATH in sudo mode doesn't include the
 regular user's PATH (e.g. nvm, pyenv), so we run `which` as SUDO_USER.

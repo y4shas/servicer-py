@@ -1,5 +1,5 @@
 """
-Delete a service — mirrors handle_delete_service.rs
+Delete a service - mirrors handle_delete_service.rs
 
 Stops and disables the service, removes the .service file, then daemon-reloads.
 """

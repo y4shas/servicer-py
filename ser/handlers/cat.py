@@ -1,5 +1,5 @@
 """
-Print contents of a .service file — mirrors handle_print_service_file.rs
+Print contents of a .service file - mirrors handle_print_service_file.rs
 """
 from __future__ import annotations
 

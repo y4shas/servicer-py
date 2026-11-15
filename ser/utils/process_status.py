@@ -1,5 +1,5 @@
 """
-/proc-based CPU and memory metrics — mirrors process_status.rs
+/proc-based CPU and memory metrics - mirrors process_status.rs
 """
 from __future__ import annotations
 
@@ -43,7 +43,7 @@ def get_cpu_time(pid: int) -> int:
 
 
 def clock_ticks_per_second() -> int:
-    """SC_CLK_TCK — usually 100 on x86_64."""
+    """SC_CLK_TCK - usually 100 on x86_64."""
     return os.sysconf("SC_CLK_TCK")
 
 

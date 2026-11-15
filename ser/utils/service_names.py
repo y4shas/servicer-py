@@ -1,5 +1,5 @@
 """
-Service name helpers — mirrors service_names.rs
+Service name helpers - mirrors service_names.rs
 """
 from pathlib import Path
 
@@ -8,12 +8,12 @@ SERVICE_DIR = Path("/etc/systemd/system")
 
 
 def get_full_name(short: str) -> str:
-    """Return the full service name, e.g. 'hello-world' → 'hello-world.ser.service'."""
+    """Return the full service name, e.g. 'hello-world' -> 'hello-world.ser.service'."""
     return f"{short}{SUFFIX}"
 
 
 def get_short_name(full: str) -> str:
-    """Strip the .ser.service suffix, e.g. 'hello-world.ser.service' → 'hello-world'."""
+    """Strip the .ser.service suffix, e.g. 'hello-world.ser.service' -> 'hello-world'."""
     return full.removesuffix(SUFFIX)
 
 

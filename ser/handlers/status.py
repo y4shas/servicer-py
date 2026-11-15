@@ -1,5 +1,5 @@
 """
-Show status table for all servicer-managed services — mirrors handle_show_status.rs
+Show status table for all servicer-managed services - mirrors handle_show_status.rs
 
 Uses rich.Table instead of cli_table, and humanize for byte formatting.
 CPU measurement uses the same two-sample /proc approach as the Rust version.
@@ -22,7 +22,7 @@ from ser.utils.process_status import (
 from ser.utils.service_names import get_short_name, list_servicer_services
 from ser.utils.systemd import get_active_state, get_main_pid, get_unit_file_state
 
-SLEEP_MS = 100  # CPU sampling interval — matches Rust constant
+SLEEP_MS = 100  # CPU sampling interval - matches Rust constant
 
 
 @dataclass
@@ -106,7 +106,7 @@ def handle_show_status() -> None:
     for s in statuses:
         active_color = "green" if s.active == "active" else "red"
         table.add_row(
-            str(s.pid) if s.pid else "—",
+            str(s.pid) if s.pid else "-",
             s.name,
             f"[{active_color}]{s.active}[/{active_color}]",
             str(s.enabled_on_boot).lower(),
