@@ -13,7 +13,7 @@ from ser.utils.service_names import get_full_name
 def handle_show_logs(name: str, lines: int = 15, follow: bool = False) -> None:
     """Display journalctl logs for a service."""
     full_name = get_full_name(name)
-    cmd = ["journalctl", "-u", full_name, "-n", str(lines)]
+    cmd = ["journalctl", "--no-pager", "-u", full_name, "-n", str(lines)]
     if follow:
         cmd.append("--follow")
 

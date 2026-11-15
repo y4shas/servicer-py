@@ -150,7 +150,7 @@ def logs(
     lines: Annotated[int, typer.Option("--lines", "-n", help="Number of lines to show")] = 15,
     follow: Annotated[bool, typer.Option("--follow", "-f", help="Follow live logs")] = False,
 ) -> None:
-    """View logs for a service (via journalctl)."""
+    """Print service logs directly (use --follow to stream new entries)."""
     from ser.handlers.logs import handle_show_logs
     handle_show_logs(name, lines=lines, follow=follow)
 
